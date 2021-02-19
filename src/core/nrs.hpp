@@ -207,14 +207,14 @@ typedef struct
 occa::device occaDeviceConfig(setupAide &options, MPI_Comm comm);
 
 // std::to_string might be not accurate enough
-static string to_string_f(double a)
+inline string to_string_f(double a)
 {
   stringstream s;
   s << std::scientific << a;
   return s.str();
 }
 
-static std::vector<std::string> serializeString(const std::string sin)
+inline std::vector<std::string> serializeString(const std::string sin)
 {
   std::vector<std::string> slist;
   string s(sin);

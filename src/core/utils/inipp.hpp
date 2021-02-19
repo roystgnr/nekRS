@@ -86,6 +86,7 @@ typedef enum
 string_to_boolean_t;
 
 namespace{
+inline
 string_to_boolean_t string_to_boolean( const std::string s, bool strict = false )
 {
   const char* falses[] = { "false", "no",  "0" };
